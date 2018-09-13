@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../styles/functions";
+
+.Star {
+  height: rem(25px);
+  width: rem(23px);
+}
+
+.Star--inactive {
+  fill: $star-color-inactive;
+}
+
+.Star--active {
+  fill: $star-color-active;
+}
