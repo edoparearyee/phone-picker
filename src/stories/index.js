@@ -5,5 +5,5 @@ import { storiesOf } from '@storybook/react';
 import Star from '../app/star/Star';
 
 storiesOf('Star', module)
-  .add('Inactive', () => <Star active={false}></Star>)
-  .add('Active', () => <Star active={true}></Star>);
+  .add('Inactive', () => <Star active={false} />)
+  .add('Active', () => <Star active={true} />);

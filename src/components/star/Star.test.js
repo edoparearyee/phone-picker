@@ -10,17 +10,13 @@ it('renders without crashing', () => {
 });
 
 test('Star has class Star-inactive', () => {
-  const component = renderer.create(
-    <Star active={false}></Star>,
-  );
+  const component = renderer.create(<Star active={false} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
 test('Star has class Star-active', () => {
-  const component = renderer.create(
-    <Star active={true}></Star>,
-  );
+  const component = renderer.create(<Star active={true} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
