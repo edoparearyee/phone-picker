@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Options has options and displays value 1`] = `
+<div
+  className="Options"
+>
+  <p
+    className="Options__state"
+  >
+    Capacity
+    : 
+    <strong>
+      64GB
+    </strong>
+  </p>
+  <ul
+    className="Options__list"
+  >
+    <li
+      className="Option Option--active"
+    >
+      <div
+        className="Option__inner"
+      >
+        64
+      </div>
+    </li>
+    <li
+      className="Option Option--inactive"
+    >
+      <div
+        className="Option__inner"
+      >
+        256
+      </div>
+    </li>
+  </ul>
+</div>
+`;

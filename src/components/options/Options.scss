@@ -1,0 +1,10 @@
+@import '../../styles/functions';
+
+.Options__list {
+  display: flex;
+  list-style: none;
+}
+
+.Options__state {
+  margin-bottom: rem(16px);
+}

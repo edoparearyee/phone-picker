@@ -5,6 +5,7 @@ import '../styles/index.css';
 import Star from '../components/star/Star';
 import Rating from '../components/rating/Rating';
 import Option from '../components/option/Option';
+import Options from '../components/options/Options';
 
 storiesOf('Star', module)
   .add('Inactive', () => <Star active={false} />)
@@ -23,3 +24,10 @@ storiesOf('Option', module)
   .add('Active', () => <Option active={true} />)
   .add('With content', () => <Option active={false}>64</Option>)
   .add('Active and with content', () => <Option active={true}>64</Option>);
+
+storiesOf('Options', module).add('With options and selected value', () => (
+  <Options label="Capacity" value="64GB">
+    <Option active={true}>64</Option>
+    <Option active={false}>256</Option>
+  </Options>
+));
