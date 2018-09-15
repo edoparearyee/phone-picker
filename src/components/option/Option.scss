@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+@import '../../styles/functions';
+
+.Option {
+  border: rem(2px) solid transparent;
+  border-radius: 25%;
+  display: inline-flex;
+  list-style: none;
+  padding: rem(5px);
+}
+
+.Option--active {
+  border-color: $option-outer-border-color;
+}
+
+.Option__inner {
+  align-items: center;
+  background-color: $option-inner-bg-color;
+  border: rem(1px) solid $option-inner-border-color;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  height: rem(46px);
+  position: relative;
+  width: rem(46px);
+}

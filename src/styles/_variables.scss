@@ -1,13 +1,22 @@
 // Colors
 
 $yellow: #ffd055;
-$light-grey: #d8d8d8;
+$green: #00596a;
+$light-grey-1: #ccc;
+$light-grey-2: #d8d8d8;
+$light-grey-3: #f4f4f4;
 
-// Types
+// Type
 
 $font-size-base: 16px;
 
 // Star
 
-$star-color-inactive: $light-grey;
+$star-color-inactive: $light-grey-2;
 $star-color-active: $yellow;
+
+// Option
+
+$option-outer-border-color: $green;
+$option-inner-border-color: $light-grey-1;
+$option-inner-bg-color: $light-grey-3;

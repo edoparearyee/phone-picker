@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option has class Option--active 1`] = `
+<li
+  className="Option Option--active"
+>
+  <div
+    className="Option__inner"
+  />
+</li>
+`;
+
+exports[`Option has class Option--active and content 1`] = `
+<li
+  className="Option Option--active"
+>
+  <div
+    className="Option__inner"
+  >
+    64
+  </div>
+</li>
+`;
+
+exports[`Option has class Option--inactive 1`] = `
+<li
+  className="Option Option--inactive"
+>
+  <div
+    className="Option__inner"
+  />
+</li>
+`;
+
+exports[`Option has class Option--inactive and content 1`] = `
+<li
+  className="Option Option--inactive"
+>
+  <div
+    className="Option__inner"
+  >
+    64
+  </div>
+</li>
+`;
