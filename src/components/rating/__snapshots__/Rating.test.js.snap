@@ -1,0 +1,463 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating has 0 active Stars 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
+
+exports[`Rating has 1 active Star 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
+
+exports[`Rating has 2 active Stars 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
+
+exports[`Rating has 3 active Stars 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
+
+exports[`Rating has 4 active Stars 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--inactive"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
+
+exports[`Rating has 5 active Stars 1`] = `
+<ul
+  className="StarList"
+>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+  <li>
+    <svg
+      className="Star Star--active"
+    >
+      <polygon
+        points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+        style={
+          Object {
+            "fillRule": "nonzero",
+          }
+        }
+      />
+    </svg>
+  </li>
+</ul>
+`;
