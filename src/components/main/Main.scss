@@ -1,0 +1,44 @@
+@import '../../styles/functions';
+@import '../../styles/variables';
+
+.Main {
+  display: flex;
+  padding: rem(40px);
+}
+
+.Main__productSummary,
+.Main__productGallery {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
+
+.Main__productGallery {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+}
+
+.Main__productImage {
+  max-width: 50%;
+}
+
+.Main__productName {
+  font-size: $font-size-h1;
+  font-weight: 300;
+  margin: 0 0 rem(30px);
+}
+
+.Main__description {
+  margin-bottom: rem(50px);
+}
+
+.Main__options {
+  display: flex;
+  list-style: none;
+  margin-bottom: rem(110px);
+}
+
+.Main__optionsItem {
+  flex: 1 0 50%;
+  max-width: 50%;
+}
