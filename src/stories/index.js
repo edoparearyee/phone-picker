@@ -23,7 +23,11 @@ storiesOf('Option', module)
   .add('Inactive', () => <Option active={false} />)
   .add('Active', () => <Option active={true} />)
   .add('With content', () => <Option active={false}>64</Option>)
-  .add('Active and with content', () => <Option active={true}>64</Option>);
+  .add('Active and with content', () => <Option active={true}>64</Option>)
+  .add('Custom color', () => <Option active={false} color="#f8e7dc" />)
+  .add('Active and custom color', () => (
+    <Option active={true} color="#f8e7dc" />
+  ));
 
 storiesOf('Options', module).add('With options and selected value', () => (
   <Options label="Capacity" value="64GB">

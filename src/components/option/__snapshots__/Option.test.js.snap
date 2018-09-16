@@ -2,44 +2,94 @@
 
 exports[`Option has class Option--active 1`] = `
 <li
-  className="Option Option--active"
+  className="Option Option--active "
 >
   <div
     className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
   />
 </li>
 `;
 
 exports[`Option has class Option--active and content 1`] = `
 <li
-  className="Option Option--active"
+  className="Option Option--active "
 >
   <div
     className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
   >
     64
   </div>
 </li>
 `;
 
-exports[`Option has class Option--inactive 1`] = `
+exports[`Option has class Option--active and custom color 1`] = `
 <li
-  className="Option Option--inactive"
+  className="Option Option--active Option--color"
 >
   <div
     className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": "#f8e7dc",
+      }
+    }
+  />
+</li>
+`;
+
+exports[`Option has class Option--inactive 1`] = `
+<li
+  className="Option Option--inactive "
+>
+  <div
+    className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
   />
 </li>
 `;
 
 exports[`Option has class Option--inactive and content 1`] = `
 <li
-  className="Option Option--inactive"
+  className="Option Option--inactive "
 >
   <div
     className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": undefined,
+      }
+    }
   >
     64
   </div>
+</li>
+`;
+
+exports[`Option has custom color 1`] = `
+<li
+  className="Option Option--inactive Option--color"
+>
+  <div
+    className="Option__inner"
+    style={
+      Object {
+        "backgroundColor": "#f8e7dc",
+      }
+    }
+  />
 </li>
 `;

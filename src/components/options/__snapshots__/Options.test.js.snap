@@ -17,19 +17,29 @@ exports[`Options has options and displays value 1`] = `
     className="Options__list"
   >
     <li
-      className="Option Option--active"
+      className="Option Option--active "
     >
       <div
         className="Option__inner"
+        style={
+          Object {
+            "backgroundColor": undefined,
+          }
+        }
       >
         64
       </div>
     </li>
     <li
-      className="Option Option--inactive"
+      className="Option Option--inactive "
     >
       <div
         className="Option__inner"
+        style={
+          Object {
+            "backgroundColor": undefined,
+          }
+        }
       >
         256
       </div>

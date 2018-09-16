@@ -32,3 +32,15 @@ test('Option has class Option--active and content', () => {
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test('Option has custom color', () => {
+  const component = renderer.create(<Option color="#f8e7dc" />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('Option has class Option--active and custom color', () => {
+  const component = renderer.create(<Option color="#f8e7dc" active={true} />);
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+});
