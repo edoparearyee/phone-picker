@@ -5,7 +5,7 @@ import './Rating.css';
 class Rating extends Component {
   render() {
     const stars = [0, 1, 2, 3, 4].map(i => (
-      <li key={i}>
+      <li className="StarList--item" key={i}>
         <Star active={i < this.props.value} />
       </li>
     ));

@@ -1,4 +1,11 @@
+@import '../../styles/functions';
+
 .StarList {
   display: flex;
   list-style: none;
+  margin-bottom: rem(25px);
+}
+
+.StarList--item {
+  display: flex;
 }
