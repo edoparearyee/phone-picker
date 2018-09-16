@@ -19,8 +19,9 @@ exports[`Options has options and displays value 1`] = `
     <li
       className="Option Option--active "
     >
-      <div
-        className="Option__inner"
+      <button
+        className="Option__action"
+        onClick={[Function]}
         style={
           Object {
             "backgroundColor": undefined,
@@ -28,13 +29,14 @@ exports[`Options has options and displays value 1`] = `
         }
       >
         64
-      </div>
+      </button>
     </li>
     <li
       className="Option Option--inactive "
     >
-      <div
-        className="Option__inner"
+      <button
+        className="Option__action"
+        onClick={[Function]}
         style={
           Object {
             "backgroundColor": undefined,
@@ -42,7 +44,7 @@ exports[`Options has options and displays value 1`] = `
         }
       >
         256
-      </div>
+      </button>
     </li>
   </ul>
 </div>

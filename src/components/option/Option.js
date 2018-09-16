@@ -10,12 +10,13 @@ class Option extends Component {
     const colorClass = this.props.color ? 'Option--color' : '';
     return (
       <li className={`Option ${activeClass} ${colorClass}`}>
-        <div
-          className="Option__inner"
+        <button
+          className="Option__action"
           style={{ backgroundColor: this.props.color }}
+          onClick={() => this.props.action(this.props.value)}
         >
           {this.props.children}
-        </div>
+        </button>
       </li>
     );
   }

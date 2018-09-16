@@ -4,8 +4,9 @@ exports[`Option has class Option--active 1`] = `
 <li
   className="Option Option--active "
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": undefined,
@@ -19,8 +20,9 @@ exports[`Option has class Option--active and content 1`] = `
 <li
   className="Option Option--active "
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": undefined,
@@ -28,7 +30,7 @@ exports[`Option has class Option--active and content 1`] = `
     }
   >
     64
-  </div>
+  </button>
 </li>
 `;
 
@@ -36,8 +38,9 @@ exports[`Option has class Option--active and custom color 1`] = `
 <li
   className="Option Option--active Option--color"
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": "#f8e7dc",
@@ -51,8 +54,9 @@ exports[`Option has class Option--inactive 1`] = `
 <li
   className="Option Option--inactive "
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": undefined,
@@ -66,8 +70,9 @@ exports[`Option has class Option--inactive and content 1`] = `
 <li
   className="Option Option--inactive "
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": undefined,
@@ -75,7 +80,7 @@ exports[`Option has class Option--inactive and content 1`] = `
     }
   >
     64
-  </div>
+  </button>
 </li>
 `;
 
@@ -83,8 +88,9 @@ exports[`Option has custom color 1`] = `
 <li
   className="Option Option--inactive Option--color"
 >
-  <div
-    className="Option__inner"
+  <button
+    className="Option__action"
+    onClick={[Function]}
     style={
       Object {
         "backgroundColor": "#f8e7dc",
