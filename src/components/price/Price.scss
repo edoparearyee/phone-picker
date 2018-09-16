@@ -7,7 +7,7 @@
   padding: rem(20px);
 }
 
-.Price__full,
+.Price__upfront,
 .Price__month {
   padding: rem(20px);
   flex: 1 0 50%;
@@ -19,7 +19,7 @@
   }
 }
 
-.Price__full {
+.Price__upfront {
   border-right: rem(1px) solid $light-grey-1;
 
   .Price--single & {

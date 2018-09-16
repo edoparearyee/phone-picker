@@ -3,13 +3,14 @@ import './Price.css';
 
 class Price extends Component {
   render() {
-    const singlePrice = !this.props.monthPrice || !this.props.fullPrice;
+    const singlePrice = !this.props.monthPrice || !this.props.upfrontPrice;
     return (
       <div className={`Price ${singlePrice ? 'Price--single' : ''}`}>
-        {this.props.fullPrice ? (
-          <div className="Price__full">
+        {this.props.upfrontPrice ? (
+          <div className="Price__upfront">
             <p>
-              from <span className="Price__value">£{this.props.fullPrice}</span>{' '}
+              from{' '}
+              <span className="Price__value">£{this.props.upfrontPrice}</span>{' '}
               upfront
             </p>
           </div>
