@@ -2,11 +2,16 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import '../styles/index.css';
 
+import phones from '../phones.json';
+
 import Star from '../components/star/Star';
 import Rating from '../components/rating/Rating';
 import Option from '../components/option/Option';
 import Options from '../components/options/Options';
 import Price from '../components/price/Price';
+import Main from '../components/main/Main';
+
+const phone = phones[0];
 
 storiesOf('Star', module)
   .add('Inactive', () => <Star active={false} />)
@@ -39,7 +44,22 @@ storiesOf('Options', module).add('With options and selected value', () => (
 
 storiesOf('Price', module)
   .add('Only monthly price', () => <Price monthPrice="43.20" />)
-  .add('Only full price', () => <Price fullPrice="43.20" />)
-  .add('Month price and full price', () => (
-    <Price monthPrice="43.20" fullPrice="1149" />
+  .add('Only upfront price', () => <Price upfrontPrice="43.20" />)
+  .add('Month price and upfront price', () => (
+    <Price monthPrice="43.20" upfrontPrice="1149" />
   ));
+
+storiesOf('Main', module).add('Default', () => (
+  <Main
+    phone={phone}
+    selectedDevice={phone.deviceSummary[0]}
+    selectedColour={'#f8e7dc'}
+    selectedMemory={'64GB'}
+    memoryOptions={['64GB', '256GB']}
+    colourOptions={['#f8e7dc', '#e1e2e3', '#232324']}
+    actions={{
+      setColour: value => console.log('setColour', value),
+      setMemory: value => console.log('setMemory', value)
+    }}
+  />
+));
