@@ -6,6 +6,7 @@ import Star from '../components/star/Star';
 import Rating from '../components/rating/Rating';
 import Option from '../components/option/Option';
 import Options from '../components/options/Options';
+import Price from '../components/price/Price';
 
 storiesOf('Star', module)
   .add('Inactive', () => <Star active={false} />)
@@ -35,3 +36,10 @@ storiesOf('Options', module).add('With options and selected value', () => (
     <Option active={false}>256</Option>
   </Options>
 ));
+
+storiesOf('Price', module)
+  .add('Only monthly price', () => <Price monthPrice="43.20" />)
+  .add('Only full price', () => <Price fullPrice="43.20" />)
+  .add('Month price and full price', () => (
+    <Price monthPrice="43.20" fullPrice="1149" />
+  ));
