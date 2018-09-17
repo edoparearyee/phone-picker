@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 import './Star.css';
 
+/**
+ * Used as a child component in `<Rating />` and displays a
+ * Star shaped inline svg
+ *
+ * @class Star
+ * @extends {Component}
+ */
 class Star extends Component {
   render() {
     return (

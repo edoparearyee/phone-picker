@@ -9,22 +9,10 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-test('Price has month and full prices', () => {
+test('Price displays month and upfront prices', () => {
   const component = renderer.create(
     <Price monthPrice={43.2} fullPrice={1149} />
   );
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-test('Price has only monthly price', () => {
-  const component = renderer.create(<Price monthPrice={43.2} />);
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
-test('Price has only full price', () => {
-  const component = renderer.create(<Price fullPrice={1149} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

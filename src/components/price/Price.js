@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import './Price.css';
 
+/**
+ * Lists monthly and upfront costs for selected device
+ *
+ * @class Price
+ * @extends {Component}
+ */
 class Price extends Component {
   render() {
-    const singlePrice = !this.props.monthPrice || !this.props.upfrontPrice;
     return (
-      <div className={`Price ${singlePrice ? 'Price--single' : ''}`}>
+      <div className="Price">
         {this.props.upfrontPrice ? (
           <div className="Price__upfront">
             <p>

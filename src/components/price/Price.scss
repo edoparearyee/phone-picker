@@ -12,19 +12,10 @@
   padding: rem(20px);
   flex: 1 0 50%;
   max-width: 50%;
-
-  .Price--single & {
-    flex: 1 0 100%;
-    max-width: 100%;
-  }
 }
 
 .Price__upfront {
   border-right: rem(1px) solid $light-grey-1;
-
-  .Price--single & {
-    border: none;
-  }
 }
 
 .Price__value {

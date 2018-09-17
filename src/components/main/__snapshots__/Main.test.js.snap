@@ -253,7 +253,7 @@ exports[`Main displays phone information 1`] = `
         </li>
       </ul>
       <div
-        className="Price "
+        className="Price"
       >
         <div
           className="Price__upfront"

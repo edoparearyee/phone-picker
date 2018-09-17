@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import './Option.css';
 
+/**
+ * A child component for `<Options />` component that displays
+ * possible phone customisation options and dispatches
+ * events to the store to update phone options when clicked
+ *
+ * @class Option
+ * @extends {Component}
+ */
 class Option extends Component {
   render() {
     const activeClass = this.props.active

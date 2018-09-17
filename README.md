@@ -1,10 +1,10 @@
 # Phone Picker
 
-A simple phone picker app built using [React][react]. This project was created using [create-react-app][create-react-app].
+A simple phone picker app built using [React][react] and [Redux][redux]. This project was created using [create-react-app][create-react-app].
 
 ## Getting started
 
-To get started you can simply clone the repository and install the dependencies.
+To get started you can simply clone the repository and install the dependencies. To run or build the app you must have a recent version of [Node.js][node].
 
 ### Clone the repository
 
@@ -34,7 +34,7 @@ Components are built in isolation using [Storybook][storybook]. Run `yarn storyb
 
 Test are run using [Jest][jest]. Run `yarn test` to run tests in watch mode.
 
-To run test once run `CI=true npm test`.
+To run tests once run `CI=true npm test`.
 
 ### Building the app
 
@@ -43,8 +43,10 @@ To create a build to deploy for a production environment run yarn build. The bui
 
 [react]: https://reactjs.org/
 [create-react-app]: https://github.com/facebook/create-react-app
+[redux]: https://redux.js.org/
 [git]: http://git-scm.com/
 [npm]: https://www.npmjs.com/
 [yarn]: https://yarnpkg.com/en/
 [storybook]: https://storybook.js.org/
 [jest]: https://jestjs.io/
+[node]: https://nodejs.org/en/

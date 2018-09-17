@@ -1,40 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Price has month and full prices 1`] = `
+exports[`Price displays month and upfront prices 1`] = `
 <div
-  className="Price Price--single"
->
-  
-  <div
-    className="Price__month"
-  >
-    <p>
-      when you pay
-       
-      <span
-        className="Price__value"
-      >
-        £
-        43.2
-      </span>
-       a month
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Price has only full price 1`] = `
-<div
-  className="Price Price--single"
->
-  
-  
-</div>
-`;
-
-exports[`Price has only monthly price 1`] = `
-<div
-  className="Price Price--single"
+  className="Price"
 >
   
   <div

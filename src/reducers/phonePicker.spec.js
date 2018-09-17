@@ -16,6 +16,64 @@ describe('phonePicker reducer', () => {
     expect(phonePicker(undefined, {})).toEqual(initialState);
   });
 
+  it('should handle LOAD', () => {
+    const action = {
+      type: types.LOAD
+    };
+
+    const expected = {
+      ...initialState,
+      loading: true
+    };
+
+    const result = phonePicker(initialState, action);
+    expect(result).toEqual(expected);
+  });
+
+  it('should handle LOAD_SUCCESS', () => {
+    const action = {
+      type: types.LOAD_SUCCESS,
+      phones
+    };
+
+    const state = {
+      ...initialState,
+      loading: true
+    };
+
+    const expected = {
+      ...initialState,
+      loading: false,
+      phone: phones[0],
+      selectedDeviceIdx: 0,
+      colourHex: '#f8e7dc',
+      memory: '64GB'
+    };
+
+    const result = phonePicker(state, action);
+    expect(result).toEqual(expected);
+  });
+
+  it('should handle LOAD_FAIL', () => {
+    const action = {
+      type: types.LOAD_FAIL
+    };
+
+    const state = {
+      ...initialState,
+      loading: true
+    };
+
+    const expected = {
+      ...initialState,
+      loading: false,
+      loadFailed: true
+    };
+
+    const result = phonePicker(state, action);
+    expect(result).toEqual(expected);
+  });
+
   it('should handle SET_COLOUR', () => {
     const action = {
       type: types.SET_COLOUR,

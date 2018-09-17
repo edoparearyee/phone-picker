@@ -11,15 +11,16 @@ export const initialState = {
 
 const newState = state => ({
   ...state,
-  selectedDeviceIdx:
-    state.phone && state.memory && state.colourHex
-      ? state.phone.deviceSummary.findIndex(
-          device =>
-            device.memory === state.memory &&
-            device.colourHex === state.colourHex
-        )
-      : 0
+  selectedDeviceIdx: setDevice(state)
 });
+
+const setDevice = state =>
+  state.phone && state.memory && state.colourHex
+    ? state.phone.deviceSummary.findIndex(
+        device =>
+          device.memory === state.memory && device.colourHex === state.colourHex
+      )
+    : null;
 
 export default function phonePicker(state = initialState, action) {
   switch (action.type) {

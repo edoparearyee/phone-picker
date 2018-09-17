@@ -1,3 +1,9 @@
+/**
+ * A file containing a list of scenarios for every component
+ * to help develop each component. Scenarios are run using
+ * {@link https://storybook.js.org/}
+ */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import '../styles/index.css';

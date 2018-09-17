@@ -35,6 +35,10 @@ export const getMemory = createSelector(
   phonePicker => phonePicker.memory
 );
 
+/**
+ * Build a list of colour options by getting a list of
+ * unique colour values from `deviceSummary` array
+ */
 export const getColourOptions = createSelector(
   [getPhonePicker],
   phonePicker =>
@@ -47,6 +51,10 @@ export const getColourOptions = createSelector(
       : []
 );
 
+/**
+ * Build a list of memory options by getting a list of
+ * unique colour values from `deviceSummary` array
+ */
 export const getMemoryOptions = createSelector(
   [getPhonePicker],
   phonePicker =>

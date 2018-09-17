@@ -9,6 +9,9 @@ import { load, loadFail, loadSuccess } from '../../actions';
 
 /**
  * Main entry component for app
+ *
+ * @class Main
+ * @extends {Component}
  */
 class Main extends Component {
   /**

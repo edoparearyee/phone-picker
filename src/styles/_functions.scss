@@ -1,3 +1,9 @@
+//
+// functions
+// ---------------------------------------
+// Utility Sass functions to generate property values
+
+// convert pixel to rem units
 @function rem($pixels, $base: 16px) {
   $rems: $pixels / $base;
   @return #{$rems}rem;
