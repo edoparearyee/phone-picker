@@ -48,24 +48,26 @@ storiesOf('Options', module).add('With options and selected value', () => (
   </Options>
 ));
 
-storiesOf('Price', module)
-  .add('Only monthly price', () => <Price monthPrice="43.20" />)
-  .add('Only upfront price', () => <Price upfrontPrice="43.20" />)
-  .add('Month price and upfront price', () => (
-    <Price monthPrice="43.20" upfrontPrice="1149" />
-  ));
+storiesOf('Price', module).add('Month price and upfront price', () => (
+  <Price monthPrice="43.20" upfrontPrice="1149" />
+));
 
 storiesOf('Main', module).add('Default', () => (
   <Main
     phone={phone}
     selectedDevice={phone.deviceSummary[0]}
-    selectedColour={'#f8e7dc'}
+    selectedColour={{ colourHex: '#f8e7dc', colourName: 'Gold' }}
     selectedMemory={'64GB'}
     memoryOptions={['64GB', '256GB']}
-    colourOptions={['#f8e7dc', '#e1e2e3', '#232324']}
+    colourOptions={[
+      { colourHex: '#f8e7dc', colourName: 'Gold' },
+      { colourHex: '#e1e2e3', colourName: 'Silver' },
+      { colourHex: '#232324', colourName: 'Space Grey' }
+    ]}
     actions={{
       setColour: value => console.log('setColour', value),
       setMemory: value => console.log('setMemory', value)
     }}
+    dispatch={fn => null}
   />
 ));

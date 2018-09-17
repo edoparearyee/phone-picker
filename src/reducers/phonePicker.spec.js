@@ -6,7 +6,10 @@ const phone = phones[0];
 const testState = {
   ...initialState,
   phone,
-  colourHex: '#f8e7dc',
+  colour: {
+    colourHex: '#f8e7dc',
+    colourName: 'Gold'
+  },
   memory: '64GB',
   selectedDeviceIdx: 0
 };
@@ -44,9 +47,12 @@ describe('phonePicker reducer', () => {
     const expected = {
       ...initialState,
       loading: false,
-      phone: phones[0],
+      phone,
       selectedDeviceIdx: 0,
-      colourHex: '#f8e7dc',
+      colour: {
+        colourHex: '#f8e7dc',
+        colourName: 'Gold'
+      },
       memory: '64GB'
     };
 
@@ -77,12 +83,18 @@ describe('phonePicker reducer', () => {
   it('should handle SET_COLOUR', () => {
     const action = {
       type: types.SET_COLOUR,
-      colour: '#e1e2e3'
+      colour: {
+        colourName: 'Silver',
+        colourHex: '#e1e2e3'
+      }
     };
 
     const expected = {
       ...testState,
-      colourHex: '#e1e2e3',
+      colour: {
+        colourName: 'Silver',
+        colourHex: '#e1e2e3'
+      },
       selectedDeviceIdx: 1
     };
 

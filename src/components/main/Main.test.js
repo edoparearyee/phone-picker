@@ -13,10 +13,14 @@ it('renders without crashing', () => {
     <Main
       phone={phone}
       selectedDevice={phone.deviceSummary[0]}
-      selectedColour={'#f8e7dc'}
+      selectedColour={{ colourHex: '#f8e7dc', colourName: 'Gold' }}
       selectedMemory={'64GB'}
       memoryOptions={['64GB', '256GB']}
-      colourOptions={['#f8e7dc', '#e1e2e3', '#232324']}
+      colourOptions={[
+        { colourHex: '#f8e7dc', colourName: 'Gold' },
+        { colourHex: '#e1e2e3', colourName: 'Silver' },
+        { colourHex: '#232324', colourName: 'Space Grey' }
+      ]}
       actions={{
         setColour: value => console.log('setColour', value),
         setMemory: value => console.log('setMemory', value)
@@ -57,10 +61,14 @@ test('Main displays phone information', () => {
       loadFailed={false}
       phone={phone}
       selectedDevice={phone.deviceSummary[0]}
-      selectedColour={'#f8e7dc'}
+      selectedColour={{ colourHex: '#f8e7dc', colourName: 'Gold' }}
       selectedMemory={'64GB'}
       memoryOptions={['64GB', '256GB']}
-      colourOptions={['#f8e7dc', '#e1e2e3', '#232324']}
+      colourOptions={[
+        { colourHex: '#f8e7dc', colourName: 'Gold' },
+        { colourHex: '#e1e2e3', colourName: 'Silver' },
+        { colourHex: '#232324', colourName: 'Space Grey' }
+      ]}
       actions={{
         setColour: value => console.log('setColour', value),
         setMemory: value => console.log('setMemory', value)

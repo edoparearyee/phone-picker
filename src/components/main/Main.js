@@ -80,15 +80,19 @@ class Main extends Component {
 
             <ul className="Product__options">
               <li className="Product__optionsItem">
-                <Options label="Colour" value={selectedDevice.colourName}>
-                  {colourOptions.map(colourHex => (
+                <Options label="Colour" value={selectedColour.colourName}>
+                  {colourOptions.map(colour => (
                     <Option
-                      active={selectedColour === colourHex}
-                      color={colourHex}
-                      key={colourHex}
-                      value={colourHex}
+                      active={selectedColour.colourHex === colour.colourHex}
+                      color={colour.colourHex}
+                      key={colour.colourHex}
+                      value={colour}
                       action={actions.setColour}
-                    />
+                    >
+                      <span className="Product__optionsColourName">
+                        {colour.colourName}
+                      </span>
+                    </Option>
                   ))}
                 </Options>
               </li>

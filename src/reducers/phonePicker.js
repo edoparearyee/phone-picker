@@ -1,7 +1,7 @@
 import * as actionTypes from '../actions/types';
 
 export const initialState = {
-  colourHex: null,
+  colour: null,
   memory: null,
   phone: null,
   selectedDeviceIdx: null,
@@ -9,16 +9,27 @@ export const initialState = {
   loadFailed: false
 };
 
+/**
+ * Returns a new state with updated `selectedDevice`
+ * @param {*} state
+ */
 const newState = state => ({
   ...state,
   selectedDeviceIdx: setDevice(state)
 });
 
+/**
+ * Set the selected device based on the selected colour and
+ * memory options
+ *
+ * @param {*} state
+ */
 const setDevice = state =>
-  state.phone && state.memory && state.colourHex
+  state.phone && state.memory && state.colour
     ? state.phone.deviceSummary.findIndex(
         device =>
-          device.memory === state.memory && device.colourHex === state.colourHex
+          device.memory === state.memory &&
+          device.colourHex === state.colour.colourHex
       )
     : null;
 
@@ -37,7 +48,10 @@ export default function phonePicker(state = initialState, action) {
       return newState({
         ...state,
         phone,
-        colourHex: device.colourHex,
+        colour: {
+          colourHex: device.colourHex,
+          colourName: device.colourName
+        },
         memory: device.memory,
         selectedDeviceIdx: 0,
         loading: false
@@ -55,7 +69,7 @@ export default function phonePicker(state = initialState, action) {
     case actionTypes.SET_COLOUR: {
       return newState({
         ...state,
-        colourHex: action.colour
+        colour: action.colour
       });
     }
 

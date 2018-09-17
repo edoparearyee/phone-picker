@@ -169,7 +169,13 @@ exports[`Main displays phone information 1`] = `
                       "backgroundColor": "#f8e7dc",
                     }
                   }
-                />
+                >
+                  <span
+                    className="Product__optionsColourName"
+                  >
+                    Gold
+                  </span>
+                </button>
               </li>
               <li
                 className="Option Option--inactive Option--color"
@@ -182,7 +188,13 @@ exports[`Main displays phone information 1`] = `
                       "backgroundColor": "#e1e2e3",
                     }
                   }
-                />
+                >
+                  <span
+                    className="Product__optionsColourName"
+                  >
+                    Silver
+                  </span>
+                </button>
               </li>
               <li
                 className="Option Option--inactive Option--color"
@@ -195,7 +207,13 @@ exports[`Main displays phone information 1`] = `
                       "backgroundColor": "#232324",
                     }
                   }
-                />
+                >
+                  <span
+                    className="Product__optionsColourName"
+                  >
+                    Space Grey
+                  </span>
+                </button>
               </li>
             </ul>
           </div>

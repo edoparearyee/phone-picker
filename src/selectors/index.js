@@ -12,9 +12,9 @@ export const getPhone = createSelector(
   phonePicker => phonePicker.phone
 );
 
-export const getColourHex = createSelector(
+export const getColour = createSelector(
   [getPhonePicker],
-  phonePicker => phonePicker.colourHex
+  phonePicker => phonePicker.colour
 );
 
 export const getSelectedDevice = createSelector(
@@ -45,9 +45,11 @@ export const getColourOptions = createSelector(
     phonePicker.phone
       ? [
           ...new Set(
-            phonePicker.phone.deviceSummary.map(({ colourHex }) => colourHex)
+            phonePicker.phone.deviceSummary.map(({ colourHex, colourName }) =>
+              JSON.stringify({ colourHex, colourName })
+            )
           )
-        ]
+        ].map(colour => JSON.parse(colour))
       : []
 );
 

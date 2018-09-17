@@ -9,7 +9,7 @@ import {
   getLoading,
   getMemory,
   getSelectedDevice,
-  getColourHex,
+  getColour,
   getPhone,
   getLoadFailed
 } from '../selectors';
@@ -18,7 +18,7 @@ const mapStateToProps = state => ({
   loading: getLoading(state),
   loadFailed: getLoadFailed(state),
   phone: getPhone(state),
-  selectedColour: getColourHex(state),
+  selectedColour: getColour(state),
   selectedMemory: getMemory(state),
   selectedDevice: getSelectedDevice(state),
   memoryOptions: getMemoryOptions(state),
