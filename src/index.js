@@ -5,14 +5,20 @@ import { createStore } from 'redux';
 
 import reducer from './reducers';
 import './styles/index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import Main from './containers/Main';
 
-const store = createStore(reducer);
+const enableDevTools =
+  process.env.NODE_ENV === 'production'
+    ? null
+    : window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__();
+
+const store = createStore(reducer, enableDevTools);
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Main />
   </Provider>,
   document.getElementById('root')
 );

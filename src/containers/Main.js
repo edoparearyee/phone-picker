@@ -4,25 +4,30 @@ import { bindActionCreators } from 'redux';
 import Main from '../components/main/Main';
 import * as phonePickerActions from '../actions';
 import {
-  getSelectedColour,
-  getSelectedMemory,
-  getSelectedDevice,
   getMemoryOptions,
   getColourOptions,
-  getPhone
+  getLoading,
+  getMemory,
+  getSelectedDevice,
+  getColourHex,
+  getPhone,
+  getLoadFailed
 } from '../selectors';
 
 const mapStateToProps = state => ({
+  loading: getLoading(state),
+  loadFailed: getLoadFailed(state),
   phone: getPhone(state),
+  selectedColour: getColourHex(state),
+  selectedMemory: getMemory(state),
   selectedDevice: getSelectedDevice(state),
-  selectedColour: getSelectedColour(state),
-  selectedMemory: getSelectedMemory(state),
   memoryOptions: getMemoryOptions(state),
   colourOptions: getColourOptions(state)
 });
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(phonePickerActions, dispatch)
+  actions: bindActionCreators(phonePickerActions, dispatch),
+  dispatch
 });
 
 export default connect(

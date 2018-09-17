@@ -1,44 +1,58 @@
 @import '../../styles/functions';
 @import '../../styles/variables';
 
-.Main {
+.Product {
   display: flex;
   padding: rem(40px);
 }
 
-.Main__productSummary,
-.Main__productGallery {
+.Product__summary,
+.Product__gallery {
   flex: 1 0 50%;
   max-width: 50%;
 }
 
-.Main__productGallery {
+.Product__gallery {
   align-items: flex-start;
   display: flex;
   justify-content: center;
 }
 
-.Main__productImage {
+.Product__image {
   max-width: 50%;
 }
 
-.Main__productName {
+.Product__name {
   font-size: $font-size-h1;
   font-weight: 300;
   margin: 0 0 rem(30px);
 }
 
-.Main__description {
+.Product__description {
   margin-bottom: rem(50px);
 }
 
-.Main__options {
+.Product__options {
   display: flex;
   list-style: none;
   margin-bottom: rem(110px);
 }
 
-.Main__optionsItem {
+.Product__optionsItem {
   flex: 1 0 50%;
   max-width: 50%;
+}
+
+.Main {
+  min-height: 100vh;
+}
+
+.Main--hasMessage {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.Main__message {
+  text-align: center;
 }

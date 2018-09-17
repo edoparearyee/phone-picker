@@ -1,34 +1,50 @@
 import phonePicker, { initialState } from './phonePicker';
 import * as types from '../actions/types';
+import phones from '../phones.json';
 
-describe('todos reducer', () => {
+const phone = phones[0];
+const testState = {
+  ...initialState,
+  phone,
+  colourHex: '#f8e7dc',
+  memory: '64GB',
+  selectedDeviceIdx: 0
+};
+
+describe('phonePicker reducer', () => {
   it('should handle initial state', () => {
     expect(phonePicker(undefined, {})).toEqual(initialState);
   });
 
   it('should handle SET_COLOUR', () => {
-    expect(
-      phonePicker(initialState, {
-        type: types.SET_COLOUR,
-        colour: '#e1e2e3'
-      })
-    ).toEqual({
-      ...initialState,
+    const action = {
+      type: types.SET_COLOUR,
+      colour: '#e1e2e3'
+    };
+
+    const expected = {
+      ...testState,
       colourHex: '#e1e2e3',
       selectedDeviceIdx: 1
-    });
+    };
+
+    const result = phonePicker(testState, action);
+    expect(result).toEqual(expected);
   });
 
   it('should handle SET_MEMORY', () => {
-    expect(
-      phonePicker(initialState, {
-        type: types.SET_MEMORY,
-        memory: '256GB'
-      })
-    ).toEqual({
-      ...initialState,
+    const action = {
+      type: types.SET_MEMORY,
+      memory: '256GB'
+    };
+
+    const expected = {
+      ...testState,
       memory: '256GB',
       selectedDeviceIdx: 3
-    });
+    };
+
+    const result = phonePicker(testState, action);
+    expect(result).toEqual(expected);
   });
 });

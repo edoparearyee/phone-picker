@@ -1,25 +1,56 @@
 import * as actionTypes from '../actions/types';
-import phones from '../phones.json';
-
-const phone = phones[0];
 
 export const initialState = {
-  colourHex: phone.deviceSummary[0].colourHex,
-  memory: phone.deviceSummary[0].memory,
-  phone,
-  selectedDeviceIdx: 0
+  colourHex: null,
+  memory: null,
+  phone: null,
+  selectedDeviceIdx: null,
+  loading: true,
+  loadFailed: false
 };
 
 const newState = state => ({
   ...state,
-  selectedDeviceIdx: state.phone.deviceSummary.findIndex(
-    device =>
-      device.memory === state.memory && device.colourHex === state.colourHex
-  )
+  selectedDeviceIdx:
+    state.phone && state.memory && state.colourHex
+      ? state.phone.deviceSummary.findIndex(
+          device =>
+            device.memory === state.memory &&
+            device.colourHex === state.colourHex
+        )
+      : 0
 });
 
 export default function phonePicker(state = initialState, action) {
   switch (action.type) {
+    case actionTypes.LOAD: {
+      return newState({
+        ...state,
+        loading: true
+      });
+    }
+
+    case actionTypes.LOAD_SUCCESS: {
+      const phone = action.phones[0];
+      const device = phone.deviceSummary[0];
+      return newState({
+        ...state,
+        phone,
+        colourHex: device.colourHex,
+        memory: device.memory,
+        selectedDeviceIdx: 0,
+        loading: false
+      });
+    }
+
+    case actionTypes.LOAD_FAIL: {
+      return newState({
+        ...state,
+        loading: false,
+        loadFailed: true
+      });
+    }
+
     case actionTypes.SET_COLOUR: {
       return newState({
         ...state,

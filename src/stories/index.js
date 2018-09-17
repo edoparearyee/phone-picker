@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import '../styles/index.css';
 
-import phones from '../phones.json';
+import phones from '../../public/data/phones.json';
 
 import Star from '../components/star/Star';
 import Rating from '../components/rating/Rating';

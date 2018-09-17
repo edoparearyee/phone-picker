@@ -1,264 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Main displays state data 1`] = `
+exports[`Main displays error information 1`] = `
+<main
+  className="Main Main--hasMessage"
+>
+  <p
+    className="Main__message"
+  >
+    Sorry there was an error loading this page
+  </p>
+</main>
+`;
+
+exports[`Main displays loading message 1`] = `
+<main
+  className="Main Main--hasMessage"
+>
+  <p
+    className="Main__message"
+  >
+    loading…
+  </p>
+</main>
+`;
+
+exports[`Main displays phone information 1`] = `
 <main
   className="Main"
 >
-  <div
-    className="Main__productGallery"
+  <article
+    className="Product"
   >
-    <img
-      alt="All-glass design, advanced cameras, wireless charging and a smart A11 Bionic chip. Intelligence never looked better."
-      className="Main__productImage"
-      src="/images/desktop/Apple_iPhone_8_Gold-full-product-front.png"
-    />
-  </div>
-  <div
-    className="Main__productSummary"
-  >
-    <h1
-      className="Main__productName"
+    <figure
+      className="Product__gallery"
     >
-      Apple iPhone 8
-    </h1>
-    <ul
-      className="StarList"
+      <img
+        alt="All-glass design, advanced cameras, wireless charging and a smart A11 Bionic chip. Intelligence never looked better."
+        className="Product__image"
+        src="/images/desktop/Apple_iPhone_8_Gold-full-product-front.png"
+      />
+    </figure>
+    <section
+      className="Product__summary"
     >
-      <li
-        className="StarList--item"
+      <h1
+        className="Product__name"
       >
-        <svg
-          className="Star Star--active"
-        >
-          <polygon
-            points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
-            style={
-              Object {
-                "fillRule": "nonzero",
-              }
-            }
-          />
-        </svg>
-      </li>
-      <li
-        className="StarList--item"
+        Apple iPhone 8
+      </h1>
+      <ul
+        className="StarList"
       >
-        <svg
-          className="Star Star--active"
+        <li
+          className="StarList--item"
         >
-          <polygon
-            points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
-            style={
-              Object {
-                "fillRule": "nonzero",
+          <svg
+            className="Star Star--active"
+          >
+            <polygon
+              points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+              style={
+                Object {
+                  "fillRule": "nonzero",
+                }
               }
-            }
-          />
-        </svg>
-      </li>
-      <li
-        className="StarList--item"
+            />
+          </svg>
+        </li>
+        <li
+          className="StarList--item"
+        >
+          <svg
+            className="Star Star--active"
+          >
+            <polygon
+              points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+              style={
+                Object {
+                  "fillRule": "nonzero",
+                }
+              }
+            />
+          </svg>
+        </li>
+        <li
+          className="StarList--item"
+        >
+          <svg
+            className="Star Star--active"
+          >
+            <polygon
+              points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+              style={
+                Object {
+                  "fillRule": "nonzero",
+                }
+              }
+            />
+          </svg>
+        </li>
+        <li
+          className="StarList--item"
+        >
+          <svg
+            className="Star Star--active"
+          >
+            <polygon
+              points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+              style={
+                Object {
+                  "fillRule": "nonzero",
+                }
+              }
+            />
+          </svg>
+        </li>
+        <li
+          className="StarList--item"
+        >
+          <svg
+            className="Star Star--active"
+          >
+            <polygon
+              points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
+              style={
+                Object {
+                  "fillRule": "nonzero",
+                }
+              }
+            />
+          </svg>
+        </li>
+      </ul>
+      <p
+        className="Product__description"
       >
-        <svg
-          className="Star Star--active"
-        >
-          <polygon
-            points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
-            style={
-              Object {
-                "fillRule": "nonzero",
-              }
-            }
-          />
-        </svg>
-      </li>
-      <li
-        className="StarList--item"
+        All-glass design, advanced cameras, wireless charging and a smart A11 Bionic chip. Intelligence never looked better.
+      </p>
+      <ul
+        className="Product__options"
       >
-        <svg
-          className="Star Star--active"
+        <li
+          className="Product__optionsItem"
         >
-          <polygon
-            points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
-            style={
-              Object {
-                "fillRule": "nonzero",
-              }
-            }
-          />
-        </svg>
-      </li>
-      <li
-        className="StarList--item"
-      >
-        <svg
-          className="Star Star--active"
+          <div
+            className="Options"
+          >
+            <p
+              className="Options__state"
+            >
+              Colour
+              : 
+              <strong>
+                Gold
+              </strong>
+            </p>
+            <ul
+              className="Options__list"
+            >
+              <li
+                className="Option Option--active Option--color"
+              >
+                <button
+                  className="Option__action"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#f8e7dc",
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="Option Option--inactive Option--color"
+              >
+                <button
+                  className="Option__action"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#e1e2e3",
+                    }
+                  }
+                />
+              </li>
+              <li
+                className="Option Option--inactive Option--color"
+              >
+                <button
+                  className="Option__action"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#232324",
+                    }
+                  }
+                />
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li
+          className="Product__optionsItem"
         >
-          <polygon
-            points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78"
-            style={
-              Object {
-                "fillRule": "nonzero",
-              }
-            }
-          />
-        </svg>
-      </li>
-    </ul>
-    <p
-      className="Main__description"
-    >
-      All-glass design, advanced cameras, wireless charging and a smart A11 Bionic chip. Intelligence never looked better.
-    </p>
-    <ul
-      className="Main__options"
-    >
-      <li
-        className="Main__optionsItem"
+          <div
+            className="Options"
+          >
+            <p
+              className="Options__state"
+            >
+              Capacity
+              : 
+              <strong>
+                64GB
+              </strong>
+            </p>
+            <ul
+              className="Options__list"
+            >
+              <li
+                className="Option Option--active "
+              >
+                <button
+                  className="Option__action"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                    }
+                  }
+                >
+                  64
+                </button>
+              </li>
+              <li
+                className="Option Option--inactive "
+              >
+                <button
+                  className="Option__action"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": undefined,
+                    }
+                  }
+                >
+                  256
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div
+        className="Price "
       >
         <div
-          className="Options"
+          className="Price__upfront"
         >
-          <p
-            className="Options__state"
-          >
-            Colour
-            : 
-            <strong>
-              Gold
-            </strong>
+          <p>
+            from
+             
+            <span
+              className="Price__value"
+            >
+              £
+              149
+            </span>
+             
+            upfront
           </p>
-          <ul
-            className="Options__list"
-          >
-            <li
-              className="Option Option--active Option--color"
-            >
-              <button
-                className="Option__action"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#f8e7dc",
-                  }
-                }
-              />
-            </li>
-            <li
-              className="Option Option--inactive Option--color"
-            >
-              <button
-                className="Option__action"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#e1e2e3",
-                  }
-                }
-              />
-            </li>
-            <li
-              className="Option Option--inactive Option--color"
-            >
-              <button
-                className="Option__action"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": "#232324",
-                  }
-                }
-              />
-            </li>
-          </ul>
         </div>
-      </li>
-      <li
-        className="Main__optionsItem"
-      >
         <div
-          className="Options"
+          className="Price__month"
         >
-          <p
-            className="Options__state"
-          >
-            Capacity
-            : 
-            <strong>
-              64GB
-            </strong>
+          <p>
+            when you pay
+             
+            <span
+              className="Price__value"
+            >
+              £
+              43.20
+            </span>
+             a month
           </p>
-          <ul
-            className="Options__list"
-          >
-            <li
-              className="Option Option--active "
-            >
-              <button
-                className="Option__action"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": undefined,
-                  }
-                }
-              >
-                64
-              </button>
-            </li>
-            <li
-              className="Option Option--inactive "
-            >
-              <button
-                className="Option__action"
-                onClick={[Function]}
-                style={
-                  Object {
-                    "backgroundColor": undefined,
-                  }
-                }
-              >
-                256
-              </button>
-            </li>
-          </ul>
         </div>
-      </li>
-    </ul>
-    <div
-      className="Price "
-    >
-      <div
-        className="Price__upfront"
-      >
-        <p>
-          from 
-          <span
-            className="Price__value"
-          >
-            £
-            149
-          </span>
-           
-          upfront
-        </p>
       </div>
-      <div
-        className="Price__month"
-      >
-        <p>
-          when you pay
-           
-          <span
-            className="Price__value"
-          >
-            £
-            43.20
-          </span>
-           a month
-        </p>
-      </div>
-    </div>
-  </div>
+    </section>
+  </article>
 </main>
 `;
