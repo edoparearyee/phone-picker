@@ -19,6 +19,12 @@ $light-grey-3: #f4f4f4;
 $font-size-base: 16px;
 $font-size-h1: rem(36px);
 
+// Grid
+
+$breakpoint-sm: 0;
+$breakpoint-md: rem(768px);
+$breakpoint-lg: rem(1024px);
+
 // Star
 
 $star-color-inactive: $light-grey-2;
