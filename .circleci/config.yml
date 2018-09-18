@@ -27,15 +27,16 @@ jobs:
       - restore_cache:
           key: ~/phone-picker-{{ .Branch }}-{{ checksum "package.json" }}
       - run: yarn build
-      - run: ./node_modules/.bin/http-server ./build -p 3000 &
-      - run: xvfb-run -a yarn test
+      - run:
+          name: Web Server
+          command: ./node_modules/.bin/http-server ./build -p 3000
+          background: true
+      - run: yarn test
 
   build:
     working_directory: ~/phone-picker
     docker:
       - image: circleci/node:8-browsers
-    environment:
-      NODE_ENV: production
     steps:
       - checkout
       - restore_cache:

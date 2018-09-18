@@ -5,7 +5,7 @@ describe('H1 Text', () => {
     'h1 loads correctly',
     async () => {
       let browser = await puppeteer.launch({
-        headless: false
+        headless: true
       });
       let page = await browser.newPage();
 
@@ -17,7 +17,7 @@ describe('H1 Text', () => {
         userAgent: ''
       });
 
-      await page.goto('http://localhost:3000/');
+      await page.goto('http://0.0.0.0:3000/');
       await page.waitForSelector('.Product__name');
 
       const html = await page.$eval('.Product__name', e => e.innerHTML);
@@ -34,7 +34,7 @@ describe('Options', () => {
     'Options displays correctly',
     async () => {
       let browser = await puppeteer.launch({
-        headless: false
+        headless: true
       });
       let page = await browser.newPage();
 
@@ -46,7 +46,7 @@ describe('Options', () => {
         userAgent: ''
       });
 
-      await page.goto('http://localhost:3000/');
+      await page.goto('http://0.0.0.0:3000/');
       await page.waitForSelector('.Options__state');
 
       const text = await page.$eval('.Options__state', e => e.innerText);
@@ -61,7 +61,7 @@ describe('Options', () => {
     'Clicking options updates text and image correctly',
     async () => {
       let browser = await puppeteer.launch({
-        headless: false
+        headless: true
       });
       let page = await browser.newPage();
 
@@ -73,7 +73,7 @@ describe('Options', () => {
         userAgent: ''
       });
 
-      await page.goto('http://localhost:3000/');
+      await page.goto('http://0.0.0.0:3000/');
       await page.waitForSelector('.Options__state');
 
       await page.click('.Option:nth-child(1) .Option__action');
@@ -81,7 +81,7 @@ describe('Options', () => {
       let imageSrc = await page.$eval('.Product__image', e => e.src);
       expect(text).toBe('Colour: Gold');
       expect(imageSrc).toBe(
-        'http://localhost:3000/images/desktop/Apple_iPhone_8_Gold-full-product-front.png'
+        'http://0.0.0.0:3000/images/desktop/Apple_iPhone_8_Gold-full-product-front.png'
       );
 
       await page.click('.Option:nth-child(2) .Option__action');
@@ -89,7 +89,7 @@ describe('Options', () => {
       imageSrc = await page.$eval('.Product__image', e => e.src);
       expect(text).toBe('Colour: Silver');
       expect(imageSrc).toBe(
-        'http://localhost:3000/images/desktop/Apple_iPhone_8_Silver_WS2-full-product-front.png'
+        'http://0.0.0.0:3000/images/desktop/Apple_iPhone_8_Silver_WS2-full-product-front.png'
       );
 
       await page.click('.Option:nth-child(3) .Option__action');
@@ -97,7 +97,7 @@ describe('Options', () => {
       imageSrc = await page.$eval('.Product__image', e => e.src);
       expect(text).toBe('Colour: Space Grey');
       expect(imageSrc).toBe(
-        'http://localhost:3000/images/desktop/Apple_iPhone_8_Space_Grey_WS2-full-product-front.png'
+        'http://0.0.0.0:3000/images/desktop/Apple_iPhone_8_Space_Grey_WS2-full-product-front.png'
       );
 
       browser.close();
@@ -109,7 +109,7 @@ describe('Options', () => {
     'Clicking options updates price correctly',
     async () => {
       let browser = await puppeteer.launch({
-        headless: false
+        headless: true
       });
       let page = await browser.newPage();
 
@@ -121,7 +121,7 @@ describe('Options', () => {
         userAgent: ''
       });
 
-      await page.goto('http://localhost:3000/');
+      await page.goto('http://0.0.0.0:3000/');
       await page.waitForSelector('.Options__state');
 
       await page.click(
