@@ -1,5 +1,7 @@
 # Phone Picker
 
+[![CircleCI](https://circleci.com/gh/edoparearyee/phone-picker.svg?style=shield)](https://circleci.com/gh/edoparearyee/phone-picker)
+
 A simple phone picker app built using [React][react] and [Redux][redux]. This project was created using [create-react-app][create-react-app].
 
 ## Getting started
