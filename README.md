@@ -34,7 +34,7 @@ Components are built in isolation using [Storybook][storybook]. Run `yarn storyb
 
 ### Running tests
 
-Test are run using [Jest][jest]. Run `yarn test` to run tests in watch mode.
+Test are run using [Jest][jest]. E2E tests also also use [Puppeteer][puppeteer] as well as [Jest][jest]. Run `yarn test` to run tests in watch mode. This will run both unit and E2E tests.
 
 To run tests once run `CI=true npm test`.
 
@@ -52,3 +52,4 @@ To create a build to deploy for a production environment run yarn build. The bui
 [storybook]: https://storybook.js.org/
 [jest]: https://jestjs.io/
 [node]: https://nodejs.org/en/
+[puppeteer]: https://github.com/GoogleChrome/puppeteer

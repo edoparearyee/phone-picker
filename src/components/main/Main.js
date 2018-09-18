@@ -79,7 +79,7 @@ class Main extends Component {
             </p>
 
             <ul className="Product__options">
-              <li className="Product__optionsItem">
+              <li className="Product__optionsItem Product__optionsColour">
                 <Options label="Colour" value={selectedColour.colourName}>
                   {colourOptions.map(colour => (
                     <Option
@@ -97,7 +97,7 @@ class Main extends Component {
                 </Options>
               </li>
 
-              <li className="Product__optionsItem">
+              <li className="Product__optionsItem Product__optionsCapacity">
                 <Options label="Capacity" value={selectedMemory}>
                   {memoryOptions.map(memory => (
                     <Option

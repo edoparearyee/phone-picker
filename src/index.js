@@ -10,7 +10,7 @@ import Main from './containers/Main';
 
 const enableDevTools =
   process.env.NODE_ENV === 'production'
-    ? null
+    ? false
     : window.__REDUX_DEVTOOLS_EXTENSION__ &&
       window.__REDUX_DEVTOOLS_EXTENSION__();
 

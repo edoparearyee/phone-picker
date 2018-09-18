@@ -141,7 +141,7 @@ exports[`Main displays phone information 1`] = `
         className="Product__options"
       >
         <li
-          className="Product__optionsItem"
+          className="Product__optionsItem Product__optionsColour"
         >
           <div
             className="Options"
@@ -219,7 +219,7 @@ exports[`Main displays phone information 1`] = `
           </div>
         </li>
         <li
-          className="Product__optionsItem"
+          className="Product__optionsItem Product__optionsCapacity"
         >
           <div
             className="Options"
